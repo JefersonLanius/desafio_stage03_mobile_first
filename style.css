@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  text-align: center;
+  background-color: #eff1ff;
+}
+
+header {
+  background: #8e9aaf;
+  height: 27.9rem;
+  width: 100%;
+  padding-bottom: 30rem;
+}
+
+header img {
+  margin: 3.2rem auto;
+}
+
+header h1 {
+  background: #cbc0d3;
+  height: 5rem;
+
+  font-family: "staatliches";
+  font-weight: 400;
+  font-size: 4rem;
+  color: #ffffff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  line-height: 4.9rem;
+  letter-spacing: 0.05rem;
+}
+.information {
+  margin: 0 auto;
+  padding: 3.2rem;
+  min-width: 30.5rem;
+  max-width: 60.5rem;
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #23053a;
+}
+.produtos {
+  display: flex;
+  flex-direction: column;
+}
+.produtos div img {
+  margin: 1.6rem 0;
+  animation: downtop;
+  animation-duration: 800ms;
+  animation-delay: 450ms;
+  animation-fill-mode: backwards;
+}
+
+.produtos div:nth-child(1) img,
+.produtos div:nth-child(3) img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 32rem;
+  height: 25rem;
+}
+.produtos div:nth-child(2) img,
+.produtos div:nth-child(4) img {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 32rem;
+  height: 45rem;
+}
+.products {
+  position: relative;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.description {
+  position: absolute;
+  top: 3.2rem;
+  right: 1.6rem;
+  width: 112px;
+  height: 35px;
+  background: #feeafa;
+  border-radius: 20px;
+
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: #4a4e69;
+
+  animation: topdown;
+  animation-duration: 800ms;
+  animation-delay: 650ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
